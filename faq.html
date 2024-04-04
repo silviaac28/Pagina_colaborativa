@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        .faq-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .question {
+            margin-bottom: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question::after {
+            content: ' ►'; /* Flecha hacia la derecha cuando la pregunta está cerrada */
+            display: inline-block;
+            transition: transform 0.3s ease; /* Agregamos una transición suave */
+        }
+        .answer {
+            display: none;
+            margin-bottom: 20px;
+        }
+        .question.open::after {
+            transform: rotate(90deg); /* Giramos la flecha hacia abajo cuando la pregunta está abierta */
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="question">¿Por qué es nuestro cafe el mejor?</div>
+        <div class="answer">Porque seleccionamos cuidadosamente los granos y los tostamos de manera artesanal.</div>
+
+        <div class="question">¿Qué es CSS?</div>
+        <div class="answer">CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para dar estilo y presentación a las páginas web escritas en HTML.</div>
+
+        <div class="question">¿Qué es JavaScript?</div>
+        <div class="answer">JavaScript es un lenguaje de programación que se utiliza para agregar interactividad y dinamismo a las páginas web.</div>
+    </div>
+    <script>
+        // Script para mostrar/ocultar respuestas al hacer clic en la pregunta
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('open');
+                question.nextElementSibling.classList.toggle('answer');
+            });
+        });
+    </script>
+</body>
+</html>
