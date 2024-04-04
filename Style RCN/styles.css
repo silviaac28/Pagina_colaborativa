@@ -5,6 +5,13 @@ body {
     color: #242426; /* Texto principal */
 }
 
+#links-footer {
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    
+}
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     /* Estilos para el encabezado */
