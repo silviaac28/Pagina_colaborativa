@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C2C5AA; /* Fondo principal */
+    color: #242426; /* Texto principal */
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Estilos para el encabezado */
+    #div1 {
+        background-color: #936639; /* Fondo encabezado */
+        color: #FFFFFF; /* Texto encabezado */
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Estilos para el contenido principal */
+    #div2 {
+        padding: 10px;
+    }
+
+    /* Estilos para el pie de página */
+    #div3 {
+        background-color: #582F0E; /* Fondo pie de página */
+        color: #FFFFFF; /* Texto pie de página */
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media only screen and (min-width: 601px) {
+    /* Estilos para el encabezado */
+    #div1 {
+        background-color: #656D4A; /* Fondo encabezado */
+        color: #FFFFFF; /* Texto encabezado */
+        padding: 40px;
+        text-align: center;
+    }
+
+    /* Estilos para el contenido principal */
+    #div2 {
+        padding: 20px;
+    }
+
+    /* Estilos para el pie de página */
+    #div3 {
+        background-color: #283D53; /* Fondo pie de página */
+        color: #FFFFFF; /* Texto pie de página */
+        padding: 40px;
+        text-align: center;
+    }
+}
