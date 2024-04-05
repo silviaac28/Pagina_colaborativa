@@ -293,8 +293,24 @@ a:hover {
 
 .container-carrito{
   background-color: #936639; /* Fondo encabezado */
-  color: #FFFFFF; /* Texto encabezado */
+
+        color: #FFFFFF; /* Texto encabezado */
+        padding: 5px;
+}
+
+#body-ayuda{
+  font-family: Arial, sans-serif;
+  background-color: #C2C5AA; /* Fondo principal */
+  color: #a3c6c7; /* Texto principal */
+  background-image: url('imagenes/fondoLoggin.jpg');
+  background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+}
+
+#titulo-ayuda{
+  color: #c7a81c; /* Texto principal */
+
   padding: 5px;
+
 
 
 }
