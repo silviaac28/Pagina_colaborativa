@@ -59,3 +59,29 @@ body {
         text-align: center;
     }
 }
+nav {
+  background-color: #452F00; /* Color de fondo */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+ul {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrar los elementos de la lista */
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #FFFFFF; /* Color del texto */
+  text-decoration: none; /* Eliminar el subrayado */
+  padding: 10px 20px; /* Espaciado interno */
+  display: inline-block; /* Convertir en elementos de bloque con espaciado */
+}
+
+a:hover {
+  background-color: #6D5133; /* Cambiar el color de fondo al pasar el mouse */
+}
