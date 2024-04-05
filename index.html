@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Mi primera Chamba</title>
     <link rel="stylesheet" href="Style RCN/styles.css">
 </head>
 <body>
+
+    <nav>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="servicios.html"">Servicios</a></li>
+
+  </ul>
+</nav>
+
     <div id="div1">
         <h1> ¡Bienvenidos a Cafe el Aroma!!</h1>
     </div>
@@ -47,6 +60,30 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
 
     </section>
 
+    <div id="carousel-imagenes">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Style RCN/imagenes/cafe.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Style RCN/imagenes/depositphotos_26885089-stock-photo-coffee-cup-with-jute-bag.jpg" class="d-block w-100" alt="s">
+              </div>
+              <div class="carousel-item">
+                <img src="./Style RCN/imagenes/istockphoto-1349239413-612x612.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
     <div id="div3">
         <h3>
             ¡Haz tu pedido ahora y comienza a disfrutar del café como nunca antes!
@@ -81,18 +118,23 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
         <h3>Testimonio de Cliente 1</h3>
         <p>"El café de este lugar es simplemente increíble. Siempre vengo aquí para trabajar y me encanta la atmósfera tranquila y acogedora. ¡Altamente recomendado!"</p>
         <p><strong>María González</strong></p>
+        <a class="saber-mas" href="/servicios.html">saber màs</a>
       </div>
       
       <div class="testimonio">
         <h3>Testimonio de Cliente 2</h3>
         <p>"He probado muchos cafés en la ciudad, pero ninguno se compara al sabor y calidad del café de este lugar. ¡Es mi lugar favorito para recargar energías!"</p>
         <p><strong>Luis Martínez</strong></p>
+        <a class="saber-mas" href="/servicios.html">saber màs</a>
+
       </div>
       
       <div class="testimonio">
         <h3>Testimonio de Cliente 3</h3>
         <p>"La atención al cliente aquí es excepcional. Siempre son amables y serviciales, y el café siempre llega rápido y delicioso. Definitivamente volveré una y otra vez."</p>
         <p><strong>Carolina Pérez</strong></p>
+        <a class="saber-mas" href="/servicios.html">saber màs</a>
+
       </div>
       
     <h2>Suscríbete para recibir nuestras novedades</h2>
@@ -111,6 +153,9 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
             <a href="acerca.html">Acerca de Nosotros</a>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
