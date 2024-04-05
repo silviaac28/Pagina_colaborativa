@@ -211,6 +211,23 @@ a:hover {
 }
 
 
+#main-container-registro{
+  width: 100vw;
+  height: 100vh;
+  margin-top: 25vh;
+  margin-left: 35vw;
+}
+
+#container-registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px  black solid;
+  width: 25vw;
+  height: 45vh;
+=======
+
 /* Estilos para categorias */
 #imgCategorias {
   padding: 20px;
@@ -278,5 +295,6 @@ a:hover {
   background-color: #936639; /* Fondo encabezado */
   color: #FFFFFF; /* Texto encabezado */
   padding: 5px;
+
 
 }
