@@ -176,3 +176,11 @@ a:hover {
 #titulo-blog{
   text-align: center;
 }
+
+#autenticacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
