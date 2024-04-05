@@ -25,6 +25,15 @@ body {
   height: auto; /* Mantener la proporción de aspecto */
   
 }
+
+.amg{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 .amg h1{
   
   color: #6D5133;
@@ -37,6 +46,9 @@ body {
   text-align: center;
 }
 
+.amg button{
+  background-color: #e9d1b7 ;
+}
 
 
 
