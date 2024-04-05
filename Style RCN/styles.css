@@ -25,6 +25,15 @@ body {
   height: auto; /* Mantener la proporción de aspecto */
   
 }
+
+.amg{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 .amg h1{
   
   color: #6D5133;
@@ -42,9 +51,28 @@ nav {
   align-items: center;
 }
 
+
 nav form {
   margin-left: auto; /* Mueve el formulario al extremo derecho */
 }
+=======
+.test{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonio{
+  max-width: 50vh;
+  height: auto;
+}
+
+
+
+.amg button{
+  background-color: #e9d1b7 ;
+}
+
 
 
 
