@@ -3,7 +3,85 @@ body {
     font-family: Arial, sans-serif;
     background-color: #C2C5AA; /* Fondo principal */
     color: #242426; /* Texto principal */
+    background-image: url('URL_DE_LA_IMAGEN');
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
 }
+
+#links-footer {
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    
+}
+
+#imag {
+  display: flex; /* Utilizar flexbox */
+  justify-content: space-around; /* Distribuir los elementos de manera uniforme en el contenedor */
+  align-items: center; /* Centrar verticalmente los elementos */
+  
+}
+#imag img {
+  max-width: 50vh; /* Establecer el ancho máximo */
+  height: auto; /* Mantener la proporción de aspecto */
+  
+}
+
+.amg{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.amg h1{
+  
+  color: #6D5133;
+  text-align: center;
+}
+
+.amg h2{
+  
+  color: #be8b54;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav form {
+  margin-left: auto; /* Mueve el formulario al extremo derecho */
+}
+=======
+.test{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonio{
+  max-width: 50vh;
+  height: auto;
+}
+
+
+
+.amg button{
+  background-color: #e9d1b7 ;
+}
+
+
+
+
+
+
+.saber-mas{
+  background-color: brown;
+}
+
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
@@ -53,6 +131,7 @@ body {
     }
 }
 
+
 .container-acerca{
   background-color: #283D53; /* Fondo pie de página */
         color: #FFFFFF; /* Texto pie de página */
@@ -63,3 +142,63 @@ body {
 #titulo-about{
   text-align: center;
 }
+
+nav {
+  background-color: #452F00; /* Color de fondo */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+ul {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrar los elementos de la lista */
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #FFFFFF; /* Color del texto */
+  text-decoration: none; /* Eliminar el subrayado */
+  padding: 10px 20px; /* Espaciado interno */
+  display: inline-block; /* Convertir en elementos de bloque con espaciado */
+}
+
+a:hover {
+  background-color: #6D5133; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.testimonio {
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.testimonio h3 {
+  color: #333; /* Color del título */
+}
+
+.testimonio p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.testimonio strong {
+  font-weight: bold; /* Negrita */
+}
+
+#contenido-banner{
+  background-color: #936639; /* Fondo encabezado */
+        color: #FFFFFF; /* Texto encabezado */
+        padding: 5px;
+}
+
+#titulo-blog{
+  text-align: center;
+}
+
+
+
