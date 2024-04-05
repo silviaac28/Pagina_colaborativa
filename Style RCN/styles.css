@@ -52,3 +52,14 @@ body {
         text-align: center;
     }
 }
+
+.container-acerca{
+  background-color: #283D53; /* Fondo pie de página */
+        color: #FFFFFF; /* Texto pie de página */
+        padding: 10px;
+
+}
+
+#titulo-about{
+  text-align: center;
+}
