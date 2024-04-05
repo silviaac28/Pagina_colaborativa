@@ -12,6 +12,10 @@ body {
     
 }
 
+.saber-mas{
+  background-color: brown;
+}
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     /* Estilos para el encabezado */
@@ -58,4 +62,50 @@ body {
         padding: 40px;
         text-align: center;
     }
+}
+nav {
+  background-color: #452F00; /* Color de fondo */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+ul {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrar los elementos de la lista */
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #FFFFFF; /* Color del texto */
+  text-decoration: none; /* Eliminar el subrayado */
+  padding: 10px 20px; /* Espaciado interno */
+  display: inline-block; /* Convertir en elementos de bloque con espaciado */
+}
+
+a:hover {
+  background-color: #6D5133; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.testimonio {
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.testimonio h3 {
+  color: #333; /* Color del título */
+}
+
+.testimonio p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.testimonio strong {
+  font-weight: bold; /* Negrita */
 }
