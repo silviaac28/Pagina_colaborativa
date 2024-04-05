@@ -55,5 +55,23 @@
             <input type="submit" value="Enviar">
         </form>
     </div>
+    <h1>Mapa de Café El aroma</h1>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var latitud = 40.712776; // Latitud de ejemplo
+            var longitud = -74.005974; // Longitud de ejemplo
+            var map = L.map('map').setView([latitud, longitud], 15);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                maxZoom: 19
+            }).addTo(map);
+            L.marker([latitud, longitud]).addTo(map)
+                .bindPopup('Café El aroma')
+                .openPopup();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
 </body>
 </html>
