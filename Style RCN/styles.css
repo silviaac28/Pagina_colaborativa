@@ -130,6 +130,19 @@ nav form {
         text-align: center;
     }
 }
+
+
+.container-acerca{
+  background-color: #283D53; /* Fondo pie de página */
+        color: #FFFFFF; /* Texto pie de página */
+        padding: 10px;
+
+}
+
+#titulo-about{
+  text-align: center;
+}
+
 nav {
   background-color: #452F00; /* Color de fondo */
   padding: 10px 0; /* Espaciado interno */
@@ -186,5 +199,6 @@ a:hover {
 #titulo-blog{
   text-align: center;
 }
+
 
 
