@@ -74,5 +74,44 @@
           </div>
 
     </section>
+
+    <div class="container">
+        <h1>Reseñas de Productos de Café</h1>
+
+        <!-- Aquí puedes agregar más reseñas según lo necesites -->
+        <div class="review">
+            <p><span class="rating">★★★★☆</span> - ¡Este café es increíblemente sabroso! Me encanta el aroma y el sabor. Definitivamente lo recomendaría.</p>
+            <p class="reviewer">- Juan Pérez</p>
+        </div>
+
+        <div class="review">
+            <p><span class="rating">★★★☆☆</span> - Buen café, aunque un poco fuerte para mi gusto. Aún así, es de buena calidad.</p>
+            <p class="reviewer">- María López</p>
+        </div>
+
+        <!-- Formulario para agregar nuevas reseñas -->
+        <h2>Deja tu Reseña</h2>
+        <form action="#" method="post">
+            <label for="rating">Clasificación:</label>
+            <select name="rating" id="rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select><br>
+            <label for="review">Tu Reseña:</label><br>
+            <textarea name="review" id="review" cols="30" rows="5"></textarea><br>
+            <label for="reviewer">Tu Nombre:</label><br>
+            <input type="text" name="reviewer" id="reviewer"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+
+    
+
+
 </body>
 </html>
