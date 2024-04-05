@@ -113,3 +113,13 @@ a:hover {
 .testimonio strong {
   font-weight: bold; /* Negrita */
 }
+
+#contenido-banner{
+  background-color: #936639; /* Fondo encabezado */
+        color: #FFFFFF; /* Texto encabezado */
+        padding: 5px;
+}
+
+#titulo-blog{
+  text-align: center;
+}
