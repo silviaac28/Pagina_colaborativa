@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style RCN/styleLogin.css">
+    <title>CARRITO DE COMPRAS</title>
+</head>
+<body>
+    <div class="container-carrito">
+        <h1>Café El aroma</h1>
+
+        <div class="producto">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto 1.</p>
+            <p>Precio: $10.00</p>
+            <button class="boton-agregar" onclick="agregarAlCarrito('Producto 1', 10.00)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <h2>Producto 2</h2>
+            <p>Descripción del producto 2.</p>
+            <p>Precio: $15.00</p>
+            <button class="boton-agregar" onclick="agregarAlCarrito('Producto 2', 15.00)">Agregar al carrito</button>
+        </div>
+
+        <div class="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos seleccionados se agregarán aquí dinámicamente -->
+            </ul>
+            <p>Total: <span id="total">0.00</span></p>
+        </div>
+    </div>
+
+    <script>
+        let carrito = [];
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            mostrarCarrito();
+        }
+
+        function mostrarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            listaCarrito.innerHTML = '';
+
+            carrito.forEach((producto) => {
+                const itemCarrito = document.createElement('li');
+                itemCarrito.textContent = ${producto.nombre} - Precio: $${producto.precio};
+                listaCarrito.appendChild(itemCarrito);
+            });
+
+            const total = carrito.reduce((total, producto) => total + producto.precio, 0);
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
