@@ -180,7 +180,72 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
           </div>
     </div>
 
-      
+    <h1>Búsqueda Avanzada</h1>
+
+    <!-- Formulario de búsqueda avanzada -->
+    <form id="searchForm">
+        <label for="tipo">Tipo de café:</label>
+        <select id="tipo">
+            <option value="">Cualquier tipo</option>
+            <option value="Arábica">Arábica</option>
+            <option value="Robusta">Robusta</option>
+            <option value="Liberica">Liberica</option>
+        </select><br><br>
+
+        <label for="origen">Origen:</label>
+        <input type="text" id="origen"><br><br>
+
+        <label for="precioDesde">Precio desde:</label>
+        <input type="number" id="precioDesde" min="0"><br><br>
+
+        <label for="precioHasta">Precio hasta:</label>
+        <input type="number" id="precioHasta" min="0"><br><br>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Resultados de la búsqueda -->
+    <div id="searchResults">
+        <!-- Los resultados se mostrarán aquí -->
+    </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se envíe el formulario por defecto
+
+            // Obtener los valores de los campos de búsqueda
+            var tipo = document.getElementById('tipo').value;
+            var origen = document.getElementById('origen').value;
+            var precioDesde = parseFloat(document.getElementById('precioDesde').value);
+            var precioHasta = parseFloat(document.getElementById('precioHasta').value);
+
+            // Realizar la lógica de búsqueda aquí (puedes ajustarla según tus necesidades)
+            var resultados = [
+                { nombre: 'Café 1', tipo: 'Arábica', origen: 'Colombia', precio: 10.00 },
+                { nombre: 'Café 2', tipo: 'Robusta', origen: 'Brasil', precio: 8.00 },
+                { nombre: 'Café 3', tipo: 'Arábica', origen: 'Etiopía', precio: 12.00 }
+                // Agregar más resultados según sea necesario
+            ];
+
+            // Filtrar los resultados según los criterios de búsqueda
+            var resultadosFiltrados = resultados.filter(function(cafe) {
+                return (!tipo || cafe.tipo === tipo) &&
+                       (!origen || cafe.origen.toLowerCase().includes(origen.toLowerCase())) &&
+                       (!precioDesde || cafe.precio >= precioDesde) &&
+                       (!precioHasta || cafe.precio <= precioHasta);
+            });
+
+            // Mostrar los resultados en la página
+            var resultadosHTML = '';
+            resultadosFiltrados.forEach(function(cafe) {
+                resultadosHTML += '<div><strong>' + cafe.nombre + '</strong><br>';
+                resultadosHTML += 'Tipo: ' + cafe.tipo + '<br>';
+                resultadosHTML += 'Origen: ' + cafe.origen + '<br>';
+                resultadosHTML += 'Precio: $' + cafe.precio.toFixed(2) + '</div><br>';
+            });
+            document.getElementById('searchResults').innerHTML = resultadosHTML;
+        });
+    </script>
     <h2>Suscríbete para recibir nuestras novedades</h2>
 
 <form action="#" method="POST">
@@ -199,6 +264,8 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
