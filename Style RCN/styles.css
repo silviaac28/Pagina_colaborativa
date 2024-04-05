@@ -36,7 +36,15 @@ body {
   color: #be8b54;
   text-align: center;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav form {
+  margin-left: auto; /* Mueve el formulario al extremo derecho */
+}
 
 
 
