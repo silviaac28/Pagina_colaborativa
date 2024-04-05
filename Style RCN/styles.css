@@ -226,8 +226,7 @@ a:hover {
   border: 1px  black solid;
   width: 25vw;
   height: 45vh;
-=======
-
+}
 /* Estilos para categorias */
 #imgCategorias {
   padding: 20px;
@@ -289,12 +288,19 @@ a:hover {
   font-size: 16px;
   color: #444;
   margin-bottom: 15px;
-
+}
 
 .container-carrito{
   background-color: #936639; /* Fondo encabezado */
   color: #FFFFFF; /* Texto encabezado */
   padding: 5px;
 
+
+}
+
+#cerrar-sesion {
+  display: flex;
+  padding-top: 60vh;
+  padding-left: 8vw;
 
 }
