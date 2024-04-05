@@ -12,6 +12,10 @@ body {
     
 }
 
+.saber-mas{
+  background-color: brown;
+}
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     /* Estilos para el encabezado */
