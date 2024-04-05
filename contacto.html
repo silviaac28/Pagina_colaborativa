@@ -1,77 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Café El aroma</title>
+    <title>Contato - Café Delícia</title>
     <style>
+        /* Estilos CSS podem ser adicionados aqui */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
         h1 {
             text-align: center;
         }
-        .container {
-            max-width: 500px;
-            margin: auto;
+        form {
+            margin-top: 20px;
         }
-        input[type=text], textarea {
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
             width: 100%;
-            padding: 12px;
+            padding: 8px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
         }
-        input[type=submit] {
+        input[type="submit"] {
             background-color: #4CAF50;
             color: white;
-            padding: 12px 20px;
+            padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
-        input[type=submit]:hover {
+        input[type="submit"]:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Contacto</h1>
-        <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." required>
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Tu email.." required>
+<div class="container">
+    <h1>Entre em Contato</h1>
+    <form action="enviar_email.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje.." style="height:200px" required></textarea>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-    <h1>Mapa de Café El aroma</h1>
-    <div id="map"></div>
-    <script>
-        function initMap() {
-            var latitud = 40.712776; // Latitud de ejemplo
-            var longitud = -74.005974; // Longitud de ejemplo
-            var map = L.map('map').setView([latitud, longitud], 15);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                maxZoom: 19
-            }).addTo(map);
-            L.marker([latitud, longitud]).addTo(map)
-                .bindPopup('Café El aroma')
-                .openPopup();
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
+        <input type="submit" value="Enviar">
+    </form>
+    <p><iframe id="map-canvas" class="map_part" width="600"  height="450"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=dan latte&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://www.googlemapsgenerator.com">how to embed google maps generator</a> and <a href="https://yatzyregler.com/no/">Yatzy regler</a></iframe></p>
+
+</div>
 </body>
 </html>
