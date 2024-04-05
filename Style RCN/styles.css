@@ -45,7 +45,17 @@ body {
   color: #be8b54;
   text-align: center;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+
+nav form {
+  margin-left: auto; /* Mueve el formulario al extremo derecho */
+}
+=======
 .test{
   display: flex;
   justify-content: space-around;
@@ -120,6 +130,19 @@ body {
         text-align: center;
     }
 }
+
+
+.container-acerca{
+  background-color: #283D53; /* Fondo pie de página */
+        color: #FFFFFF; /* Texto pie de página */
+        padding: 10px;
+
+}
+
+#titulo-about{
+  text-align: center;
+}
+
 nav {
   background-color: #452F00; /* Color de fondo */
   padding: 10px 0; /* Espaciado interno */
@@ -177,6 +200,7 @@ a:hover {
   text-align: center;
 }
 
+
 #autenticacion {
   display: flex;
   flex-direction: column;
@@ -184,3 +208,4 @@ a:hover {
   align-items: center;
   padding: 50px;
 }
+
