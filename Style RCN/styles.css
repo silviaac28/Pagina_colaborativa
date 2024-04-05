@@ -37,6 +37,19 @@ body {
   text-align: center;
 }
 
+.test{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonio{
+  max-width: 50vh;
+  height: auto;
+}
+
+
+
 
 
 
