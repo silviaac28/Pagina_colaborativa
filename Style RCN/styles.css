@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #C2C5AA; /* Fondo principal */
     color: #242426; /* Texto principal */
+    background-image: url('URL_DE_LA_IMAGEN');
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
 }
 
 #links-footer {
@@ -11,6 +13,8 @@ body {
     color: white;
     
 }
+
+
 
 .saber-mas{
   background-color: brown;
